@@ -1,1 +1,2 @@
-for f in $(\ls -d [A-Z]*); do mv $f /tmp/u; done
+mv Hoverton /tmp/u
+mv School /tmp/u
