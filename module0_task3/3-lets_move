@@ -1,3 +1,2 @@
-mv Holberton /tmp/u
-mv School /tmp/u
+for f in $(\ls -d [A-Z]*); do mv $f /tmp/u; done
 
