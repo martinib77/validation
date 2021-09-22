@@ -1,6 +1,6 @@
 #!/bin/bash
 i=0
-while [[ $i -le 10 ]]; do
+while [[ $i -le 9 ]]; do
     echo "DevOps"
     i=$((i+=1))
 done
