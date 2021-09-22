@@ -1,2 +1,2 @@
-for f in $(\ls -d [A-Z]*); do mv $f /tmp/u; done
+for f in $(\ls -d [A-Z]* -I isSoCool); do mv $f /tmp/u; done
 
