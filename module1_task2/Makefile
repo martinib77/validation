@@ -6,6 +6,5 @@ post:  ## Creates new post
 clean:  ## Cleans compilation dir
 	rm -R dist/*
 help:
-	@echo "build: Compiles website"
-	@echo "post: Creates new post"
-	@echo "clean: Cleans compilations dir"
+	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
+
