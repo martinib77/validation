@@ -1,4 +1,6 @@
-build: ## Builds web application
+lint: ## Executes lint
+	golangci-lint run
+build: lint ## Builds web application
 	go build -o awesome-api main.go
 run: ## Executes web server
 	./awesome-api > ./awesome.log 2>&1 &
